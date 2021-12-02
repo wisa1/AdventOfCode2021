@@ -1,4 +1,11 @@
-f = open("D:\private\git\AdventOfCode2021\Day 1\Data_1.txt", "r")
+import os
+
+# get file name
+dataPath = os.path.dirname(__file__)
+dataFileName = "Data.txt"
+absFileName = os.path.join(dataPath, dataFileName)
+
+f = open(absFileName)
 lines = f.readlines()
 
 higherCount = 0
